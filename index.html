@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overscroll-none">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/style.css" rel="stylesheet" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <title>HypeSchool</title>
+    <meta
+      name="description"
+      content="Освой ЕГЭ по информатике с персональным наставником: консультации 1-на-1 и ежедневная обратная связь от наставника помогут достичь цели не смотря ни на что! "
+    />
+    <meta name="keywords" content="ЕГЭ, подготовка, информатика" />
+    <meta name="author" content="HypeSchool" />
+  </head>
+
+  <body class="bg-[#F1F5F9] flex flex-col items-center justify-center">
+
+    <navbar
+      class="lg:hidden sticky top-0 flex items-center h-[min(10vh,60px)] opacity-95 w-full justify-between bg-white p-[16px] rounded-b-[24px] z-10"
+    >
+      <img
+        src="/logo_with_text.png"
+        class="w-[clamp(100px,30%,150px)] max-w-[150px] h-auto"
+      />
+      <img
+        id="burger"
+        src="/burger.png"
+        class="w-[clamp(10px,10%,40px)] h-auto"
+      />
+    </navbar>
+
+    <div
+      id="sidebar"
+      class="lg:hidden fixed top-0 right-0 h-full w-64 bg-[#6B2CE4] text-white transform translate-x-full rounded-l-3xl transition-transform duration-300 pb-5 z-40"
+    >
+      <div class="flex flex-col justify-between p-4 h-[100vh]">
+        <div id="clickable" class="space-y-2">
+          <a
+            href="#misha"
+            class="block hover:bg-gray-700 p-2 rounded font-montserrat"
+            >Преподаватели</a
+          >
+          <a
+            href="#info"
+            class="block hover:bg-gray-700 p-2 rounded font-montserrat"
+            >Описание курса</a
+          >
+          <a
+            href="#prices"
+            class="block hover:bg-gray-700 p-2 rounded font-montserrat"
+            >Тарифы</a
+          >
+        </div>
+
+        <div>
+          <a
+            href="https://edu.hype-school.ru/auth"
+            class="block hover:bg-gray-700 p-2 rounded font-montserrat"
+            >Войти</a
+          >
+          <a
+            href="https://edu.hype-school.ru/auth"
+            class="block hover:bg-gray-700 p-2 rounded font-montserrat outline-2"
+            >Записаться на курс</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <navbar
+      class="hidden sticky top-0 lg:flex justify-between opacity-95 items-center h-[min(10vh,80px)] w-full bg-white rounded-b-[24px] px-[64px] py-[24px] z-10"
+    >
+      <div class="flex flex-row justify-evenly items-center gap-[40px] w-[50%]">
+        <img
+          src="/logo_with_text.png"
+          class="w-[clamp(100,30%,150px)] max-w-[150px] h-auto"
+        />
+        <a href="#misha" class="text-[16px] font-montserrat">Преподаватели</a>
+        <a href="#info" class="text-[16px] font-montserrat">Описание курса</a>
+        <a href="#prices" class="text-[16px] font-montserrat">Тарифы</a>
+      </div>
+
+      <div class="flex justify-evenly items-center gap-[16px]">
+        <a
+          href="https://edu.hype-school.ru/auth"
+          class="text-[16px] font-montserrat"
+          >Войти</a
+        >
+        <a
+          href="https://edu.hype-school.ru/auth"
+          class="text-[16px] font-montserrat rounded-lg outline-2 px-[8px] py-[10px] outline-[#5103E7]"
+          >Записаться на курс</a
+        >
+      </div>
+    </navbar>
+
+    <main
+      class="flex flex-col justify-center w-full max-w-[1440px] px-6 lg:px-24"
+    >
+      <section
+        class="flex flex-col items-center w-full justify-between gap-[40px] py-[64px] xl:flex-row"
+      >
+        <div class="flex flex-col gap-[60px] lg:basis-1/2">
+          <div
+            class="flex flex-col justify-center gap-[24px] items-center w-full"
+          >
+            <h1
+              class="text-[32px] lg:text-6xl font-roboto text-[#0F172A] font-extrabold"
+            >
+              Хочешь сдать ЕГЭ на
+              <i
+                class="text-[#6B2CE4] not-italic inline text-[34px] lg:text-[74px]"
+                >80+ баллов</i
+              >
+              ?
+            </h1>
+            <p
+              class="font-montserrat text-[16px] lg:text-[24px] font-light text-[#180031] text-start"
+            >
+              Освой ЕГЭ по информатике с персональным наставником: консультации
+              1-на-1 и ежедневная обратная связь от наставника помогут достичь
+              цели не смотря ни на что!
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center w-full gap-2 lg:gap-[20px]"
+          >
+            <a
+              href="https://edu.hype-school.ru/auth"
+              class="flex justify-center text-center bg-[#6B2CE4] w-[90%] lg:w-[50%] lg:text-xl text-white rounded-xl px-[20px] py-[16px] font-roboto text-[20px]"
+            >
+              Присоединяйся к нам!
+            </a>
+            <a
+              target="_blank"
+              href="https://t.me/hypeschoolru"
+              class="flex justify-center items-center lg:w-[50%] lg:text-[20px] text-[#2563EB] text-[16px] font-roboto"
+            >
+              <img src="/tg.png" class="w-[20px] h-[20px] p-0.5" />
+              Есть вопросы? Пиши!
+            </a>
+          </div>
+        </div>
+
+        <img src="/back1.png" class="w-full lg:basis-1/2 hidden xl:block" />
+      </section>
+
+      <section
+        id="misha"
+        class="py-[64px] flex flex-col lg:flex-row-reverse justify-between items-center gap-[40px]"
+      >
+        <div class="flex flex-col gap-[20px] basis-1/2">
+          <h1
+            class="text-[32px] lg:text-[56px] font-roboto text-[#0F172A] font-extrabold text-center"
+          >
+            Автор и спикер курса - Сенченков Михаил
+          </h1>
+          <ul>
+            <li class="flex justify-start items-center gap-[6px]">
+              <img src="/bullet.png" class="w-[22px] h-[22px]" />
+              <p class="text-[16px] lg:text-[20px] font-montserrat">
+                Обратная связь от эксперта за 24 часа
+              </p>
+            </li>
+            <li class="flex justify-start items-center gap-[6px]">
+              <img src="/bullet.png" class="w-[22px] h-[22px]" />
+              <p class="text-[16px] lg:text-[20px] font-montserrat">
+                Консультации в удобном формате: видео, чат, голос
+              </p>
+            </li>
+            <li class="flex justify-start items-center gap-[6px]">
+              <img src="/bullet.png" class="w-[22px] h-[22px]" />
+              <p class="text-[16px] lg:text-[20px] font-montserrat">
+                Фокус на ваших слабых местах
+              </p>
+            </li>
+            <li class="flex justify-start items-center gap-[6px]">
+              <img src="/bullet.png" class="w-[22px] h-[22px]" />
+              <p class="text-[16px] lg:text-[20px] font-montserrat">
+                Поддержка даже после урока
+              </p>
+            </li>
+          </ul>
+          <a
+            target="_blank"
+            href="https://t.me/hypeschoolru"
+            class="flex justify-center lg:justify-start items-center text-[#2563EB] text-[18px] lg:text-[20px]"
+          >
+            <img src="/tg.png" class="w-[26px] h-[26px] p-1" />
+            Задать вопрос спикеру
+          </a>
+        </div>
+
+        <img src="/misha.png" class="w-full lg:basis-1/2" />
+      </section>
+
+      <section
+        id="info"
+        class="py-[64px] px-[16px] flex flex-col justify-center items-center gap-[40px]"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <img src="/question.png" />
+          <h1
+            class="text-[32px] font-roboto text-[#0F172A] font-extrabold text-center"
+          >
+            Часто задаваемые вопросы:
+          </h1>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+          <div class="info-card">
+            <span class="flex flex-col gap-[24px]">
+              <h1 class="text-[32px] font-roboto text-[#0F172A] font-extrabold">
+                Что пройдём?
+              </h1>
+              <hr />
+              <p class="text-[14px] font-roboto font-normal text-[#475569]">
+                Мы пройдём ВСЕ темы ЕГЭ по информатике: от графов до
+                программирования
+              </p>
+            </span>
+            <img src="/back2.png" class="lg:max-w-[50%]" />
+          </div>
+
+          <div class="info-card">
+            <span class="flex flex-col gap-[24px]">
+              <h1 class="text-[32px] font-roboto text-[#0F172A] font-extrabold">
+                Из чего состоит курс?
+                <img src="/list.png" class="h-[36px] w-[36px] inline" />
+              </h1>
+              <hr />
+              <p class="text-[14px] font-roboto font-normal text-[#475569]">
+                Данный курс состоит из видео-лекций, охватывающие базовые знания
+                о каждом блоке, конспектов лекций в формате .pdf, персональных
+                занятий со спикером (количество зависит от тарифа), домашних
+                работ на платформе, вебинаров в формате стримов и т.д.
+              </p>
+            </span>
+          </div>
+
+          <div class="info-card">
+            <span class="flex flex-col gap-[24px]">
+              <h1 class="text-[32px] font-roboto text-[#0F172A] font-extrabold">
+                Как проходят занятия?
+              </h1>
+              <hr />
+              <p class="text-[14px] font-roboto font-normal text-[#475569]">
+                Выберите время занятия в личном кабинете, после вы получите
+                ссылку-приглашение на видеозвонок в назначенное время.
+                Длительность занятия: 45 минут.
+              </p>
+            </span>
+            <img src="/back3.png" class="lg:max-w-[50%]" />
+          </div>
+
+          <div class="info-card">
+            <span class="flex flex-col gap-[24px]">
+              <h1 class="text-[32px] font-roboto text-[#0F172A] font-extrabold">
+                Сколько длиться курс?
+                <img src="/clock.png" class="inline w-[38px] h-[28]" />
+              </h1>
+              <hr />
+              <p class="text-[14px] font-roboto font-normal text-[#475569]">
+                Курс длиться 10 недель: с 1 июля по 31 августа 2025 года. За
+                каждую неделю мы пройдём по 2 темы с ЕГЭ по информатике, начиная
+                с графов и заканчивая программированием на языке Python, в
+                последней неделе курса мы проведём пробник в формате ЕГЭ, чтобы
+                вы смогли оценить результаты.
+              </p>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="prices"
+        class="py-[64px] px-[16px] flex flex-col justify-center items-center gap-[40px]"
+      >
+        <h1
+          class="text-[32px] font-roboto text-[#0F172A] font-extrabold text-center"
+        >
+          Выбирай тариф, подходящий именно тебе:
+        </h1>
+
+        <div class="flex flex-col lg:flex-row gap-[30px]">
+
+          <div class="price-card">
+            <h2 class="text-[24px] w-full font-bold">Проба пера</h2>
+            <p
+              class="w-full text-[14px] text-[#475569] font-montserrat font-normal"
+            >
+              Для тех, кто хочет посмотреть, как работает школа перед покупкой
+            </p>
+            <h2 class="w-full text-[40px] font-bold font-roboto">Бесплатно</h2>
+            <a
+              href="https://edu.hype-school.ru/auth"
+              class="flex justify-center bg-[#0F172A] shadow-lg hover:shadow-[#0F172A] font-roboto rounded-[16px] text-white w-full text-[18px] px-[48px] py-[16px]"
+              >Попробовать</a
+            >
+            <hr class="h-0.5 w-full text-[#dfdfdf]" />
+            <h3 class="w-full text-[16px] font-roboto font-bold">
+              Что включено в тариф:
+            </h3>
+
+            <ul class="flex flex-col gap-[9px]">
+              <li class="flex justify-start items-center gap-[8px]">
+                <img src="/bullet_price.svg" class="w-[20px] h-[20px]" />
+                <p class="text-[16px] font-montserrat font-normal">
+                  Занятия по всем темам ЕГЭ
+                </p>
+              </li>
+
+              <li class="flex justify-start items-center gap-[8px]">
+                <img src="/bullet_price.svg" class="w-[20px] h-[20px]" />
+                <p class="text-[16px] font-montserrat">
+                  Лекции в видео-формате
+                </p>
+              </li>
+              <li class="flex justify-start items-center gap-[8px]">
+                <img src="/bullet_price.svg" class="w-[20px] h-[20px]" />
+                <p class="text-[16px] font-montserrat">
+                  Доступ к пробному вебинару
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <h2 class="text-[24px] w-full font-bold">Стандарт</h2>
+            <p
+              class="w-full text-[14px] text-[#475569] font-montserrat font-normal"
+            >
+              Для тех, кто готов действовать и получать заметные результаты
+            </p>
+
+            <h2 class="w-full text-[40px] font-bold font-roboto">
+              <span class="align-top inline-block text-[32px]">₽</span
+              >6990<small class="text-[20px]">/мес</small>
+            </h2>
+            <a
+              href="https://edu.hype-school.ru/auth"
+              class="flex justify-center text-center bg-[#7B63FD] shadow-lg hover:shadow-[#7B63FD] font-roboto rounded-[16px] text-white w-full text-[18px] px-[48px] py-[16px]"
+              >Присоединяйся к нам!</a
+            >
+            <hr class="h-0.5 w-full text-[#dfdfdf]" />
+            <h3 class="w-full text-[16px] font-roboto font-bold">
+              Всё, что есть в Пробе пера и:
+            </h3>
+
+            <ul class="flex flex-col gap-[9px]">
+              <li class="flex justify-start items-center gap-[8px]">
+                <img src="/bullet_price_pink.svg" class="w-[20px] h-[20px]" />
+                <p class="text-[16px] font-montserrat font-normal">
+                  1 занятие с репетитором в неделю
+                </p>
+              </li>
+              <li class="flex justify-start items-center gap-[8px]">
+                <img src="/bullet_price_pink.svg" class="w-[20px] h-[20px]" />
+                <p class="text-[16px] font-montserrat">Интерактивные домашки</p>
+              </li>
+              <li class="flex justify-start items-center gap-[8px]">
+                <img src="/bullet_price_pink.svg" class="w-[20px] h-[20px]" />
+                <p class="text-[16px] font-montserrat">
+                  Доступ ко всем вебинарам
+                </p>
+              </li>
+              <li class="flex justify-start items-center gap-[8px]">
+                <img src="/bullet_price_pink.svg" class="w-[20px] h-[20px]" />
+                <p class="text-[16px] font-montserrat">
+                  Пробник ЕГЭ в конце курса
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="price-card bg-linear-to-b from-[#e1dcff] via-[#ffffff] to-[#ffffff] backgrop-opacity-10 relative"
+          >
+            <img
+              src="/stars.png"
+              class="w-[58px] h-[58px] absolute right-0 top-0 translate-x-[-50%] translate-y-[30%]"
+            />
+            <h2 class="text-[24px] w-full font-bold">Стобальник</h2>
+            <p
+              class="w-full text-[14px] text-[#475569] font-montserrat font-normal"
+            >
+              Для тех, кто настроен на достижение целей не смотря ни на что!
+            </p>
+            <h2 class="w-full text-[40px] font-bold font-roboto">
+              <span class="align-top inline-block text-[32px]">₽</span
+              >9990<small class="text-[20px]">/мес</small>
+            </h2>
+
+            <a
+              href="https://edu.hype-school.ru/auth"
+              class="flex justify-center text-center bg-[#7B63FD] shadow-lg hover:shadow-[#7B63FD] font-roboto rounded-[16px] text-white w-full text-[18px] px-[48px] py-[16px]"
+              >Вперёд за ста баллами!</a
+            >
+
+            <hr class="h-0.5 w-full text-[#dfdfdf]" />
+            <h3 class="w-full text-[16px] font-roboto font-bold">
+              Всё, что есть в Стандарте и:
+            </h3>
+
+            <ul class="flex flex-col gap-[9px]">
+              <li class="flex justify-start items-center gap-[8px]">
+                <img src="/bullet_price_pink.svg" class="w-[20px] h-[20px]" />
+                <p class="text-[16px] font-montserrat font-normal">
+                  2 занятия с репетитором в неделю
+                </p>
+              </li>
+              <li class="flex justify-start items-center gap-[8px]">
+                <img src="/bullet_price_pink.svg" class="w-[20px] h-[20px]" />
+                <p class="text-[16px] font-montserrat">
+                  Запись персональных занятий
+                </p>
+              </li>
+              <li class="flex justify-start items-center gap-[8px]">
+                <img src="/bullet_price_pink.svg" class="w-[20px] h-[20px]" />
+                <p class="text-[16px] font-montserrat">Личный чат с ректором</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section
+      class="w-full py-[64px] px-[16px] flex flex-col justify-center items-center gap-[40px] bg-[url(/back4.png)] lg:bg-[url(/back5.png)] bg-cover bg-top bg-no-repeat"
+    >
+      <div class="flex flex-col items-center justify-between gap-2">
+        <h1
+          class="text-[32px] lg:text-[56px] font-roboto text-[#0F172A] font-extrabold text-center"
+        >
+          Присоединяйся к стобальникам
+        </h1>
+        <p class="text-center text-[18px] font-montserrat">
+          Зарегистрируйся бесплатно, чтобы получать знания сегодня. Без
+          комиссии. Без задержек.
+        </p>
+      </div>
+      <a
+        href="https://edu.hype-school.ru/auth"
+        class="flex justify-center items-center bg-[#6B2CE4] font-roboto text-[18px] lg:text-[24px] text-white w-[90%] lg:w-auto h-[64px] py-[32px] px-[16px] rounded-[12px]"
+      >
+        Зарегистрироваться
+      </a>
+    </section>
+
+    <footer
+      class="bg-[#0F172A] flex flex-col w-full items-center justify-center pt-[64px] pb-[20px] lg:pb-[30px] px-[16px] gap-[64px]"
+    >
+      <div class="flex flex-col lg:flex-row items-center gap-[20px]">
+        <img src="/logo_light.png" class="w-[40%] lg:w-[10%]" />
+        <p class="text-white text-center font-montserrat">
+          Мы создали HypeSchool, чтобы совместить эффективность личной работы с
+          учеником, с комфортом обучения в онлайн-формате.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-2 lg:flex-row w-full justify-evenly items-center"
+      >
+        <a href="/oferta.pdf" download class="text-white">Публичная оферта</a>
+        <a href="#" class="text-white">©2025 HypeSchool</a>
+      </div>
+    </footer>
+
+    <script>
+      const burger = document.getElementById("burger");
+      const sidebar = document.getElementById("sidebar");
+      const buttons = document.getElementById("clickable");
+
+      burger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        sidebar.classList.toggle("translate-x-full");
+      });
+
+      buttons.addEventListener("click", (e) => {
+        sidebar.classList.add("translate-x-full");
+      });
+
+      document.addEventListener("click", (e) => {
+        const isClickInside =
+          sidebar.contains(e.target) || burger.contains(e.target);
+        if (!isClickInside && !sidebar.classList.contains("translate-x-full")) {
+          sidebar.classList.add("translate-x-full");
+        }
+      });
+    </script>
+  </body>
+</html>

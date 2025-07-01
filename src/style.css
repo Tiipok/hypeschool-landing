@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-roboto: "Roboto", sans-serif;
+    --font-montserrat: "Montserrat Alternates", sans-serif;
+}
+
+.info-card {
+ @apply flex flex-col md:flex-row justify-start items-center gap-[6px] bg-[#F3F3F3] rounded-[45px] border border-[#9582FF] shadow-md shadow-[#9582FF] px-[32px] py-[32px];
+}
+
+.price-card {
+ @apply flex flex-col justify-start items-start gap-[24px] bg-white rounded-[45px] shadow px-[20px] py-[32px];
+}
