@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /oferta.pdf
+
+Sitemap: https://hype-school.ru/sitemap.xml
