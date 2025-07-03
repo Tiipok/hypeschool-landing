@@ -9,9 +9,9 @@
 }
 
 .info-card {
- @apply flex flex-col md:flex-row justify-start items-center gap-[6px] bg-[#F3F3F3] rounded-[45px] border border-[#9582FF] shadow-md shadow-[#9582FF] px-[32px] py-[32px];
+ @apply flex flex-col md:flex-row justify-start items-center gap-[6px] bg-[#F3F3F3] rounded-[45px] border border-[#9582FF] border-b-5 px-[32px] py-[32px];
 }
 
 .price-card {
- @apply flex flex-col justify-start items-start gap-[24px] bg-white rounded-[45px] shadow px-[20px] py-[32px];
+ @apply flex flex-col justify-start items-start gap-[24px] bg-white rounded-[45px] border border-b-5 px-[20px] py-[32px];
 }
